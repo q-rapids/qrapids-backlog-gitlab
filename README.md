@@ -14,4 +14,4 @@ To link this plugin with the Q-Rapids Dashboard application, the plugin provide 
 
 ### Documentation :
 
-Example usage of the REST API endpoints after the module is running, is available in [qrapids Backlog Services](https://github.com/q-rapids/qrapids-dashboard/wiki/qrapids-backlog-Services) wiki section.
+Example usage of the REST API endpoints after the plugin is running, is available in [qrapids Backlog Services](https://github.com/q-rapids/qrapids-dashboard/wiki/qrapids-backlog-Services) wiki section.
