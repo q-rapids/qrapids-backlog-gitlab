@@ -4,13 +4,18 @@ The q-rapids-backlog-gitlab plugin is a java application base on Spring Framewor
 
 ## Configuration
 
-The plugin is configure by the `application.properties` file which if you are using Tomcat as a Web Server, is located at: `<Tomcat folder>\webapps\qrapids-backlog-gitlab-X.Y.Z\WEB-INF\classes`.
+Some properties need to be configured in the `application.properties` file, this file (in the case of a Tomcat server) is located at: `<Tomcat folder>\webapps\qrapids-backlog-gitlab-X.Y.Z\WEB-INF\classes`.
 
 * **gitlab.url =** `http://<BACKLOG IP>:<BACKLOG PORT>` 
 * **gitlab.secret =** `<BACKLOG AUTHENTICATION>`
 
-To link Q-Rapids Dashboard application to this plugin, the plugin provide a rest service dedicated to quality requirement generation and consult milestones/phases. The URL of this service must be configure on [qr-dashboard configuration file](https://github.com/q-rapids/qrapids-dashboard/wiki/Configuration-File).
+To link Q-Rapids Dashboard application to this plugin, the services END POINTs must be configured on the [qr-dashboard configuration file](https://github.com/q-rapids/qrapids-dashboard/wiki/Configuration-File).
 
 ## Documentation
 
-The REST API services documentation is available at [qrapids Backlog Services](https://github.com/q-rapids/qrapids-dashboard/wiki/qrapids-backlog-Services) wiki section.
+The REST API services included in this component are:
+* **createIssue**:Export QR service 
+* **milestones**: Import Milestones
+* **phases**: Import Phases
+
+Documentation is available at [qrapids Backlog Services](https://github.com/q-rapids/qrapids-dashboard/wiki/qrapids-backlog-Services) wiki section.
